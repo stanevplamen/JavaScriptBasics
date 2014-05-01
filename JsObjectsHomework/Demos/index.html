@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>General document</title>
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/sprintf-0.7-beta1.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+     <h1>Using Objects</h1>
+     <div>
+        <label> 1. Write functions for working with shapes in standard Planar coordinate system.
+        Calculate the distance between two points. Check if three segment lines can form a triangle.
+        </label><br />
+        <label>P1(X,Y):</label><input id="txtIsPlanX1" type="text" value="2" /> <input id="txtIsPlanY1" type="text" value="2" /> <br />
+        <label>P2(X,Y):</label><input id="txtIsPlanX2" type="text" value="1" /> <input id="txtIsPlanY2" type="text" value="1" /> <br />
+        <label>P3(X,Y):</label><input id="txtIsPlanX3" type="text" value="3" /> <input id="txtIsPlanY3" type="text" value="3" /> <br />
+        <input id="btnIsPlan" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answerSpecial" id="resIsPlan"></span>
+    </div>
+     <div>
+        <label> 2. Write a function that removes all elements with a given value.</label><br />
+        <input id="txtIsRem1" type="text" value="1,2,1,4,1,3,4,1,111,3,2,1,'1'" /> 
+        <input id="txtIsRem2" type="text" value="1" /> 
+        <input id="btnIsRem" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsRem"></span>
+    </div>
+    <div>
+        <label> 3. Write a function that makes a deep copy of an object.</label><br />
+        <input id="txtIsDC" type="text" value="2, 1, 1, 2, 3, 3, 2, 2, 2, 1" /> 
+        <input id="btnIsDC" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsDC"></span>
+    </div>
+      <div>
+        <label> 4. Write a function that checks if a given object contains a given property.</label><br />
+        <input id="txtIsProp" type="text" value="toString" /> 
+        <input id="btnIsProp" type="submit" value="submit" /> 
+        <label>If array has the given property: </label>
+        <span class="answer" id="resIsProp"></span>
+    </div>
+      <div>
+        <label> 5.Write a function that finds the youngest person in a given array of persons and prints his/hers full name.</label><br />
+        <label>First Name:</label><input id="txtIsPeo1" type="text" value="Ivan" /> 
+        <label>Last Name:</label><input id="txtIsPeo2" type="text" value="Hristov" /> 
+        <label>Age:</label><input id="txtIsPeo3" type="text" value="23" /> 
+
+        <input id="btnIsPeo1" type="submit" value="add person" />
+        <label>People: </label><br />
+        <span class="answer" id="resIsPeo1"></span><br />
+
+        <input id="btnIsPeo2" type="submit" value="yongest" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsPeo2"></span>
+    </div>
+     <div>
+        <label> 6. Write a function that groups an array of persons by age, first or last name. The function must return an associative array, with keys - the groups, and values -arrays with persons in this groups.</label><br />
+        <select id="selIsFN" name="example">
+            <option value="firstName">First Name</option>
+            <option value="lastName">Last Name</option>
+            <option value="age">Age</option>
+        </select>
+        <input id="btnIsFN" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsFN"></span>
+    </div>   
+</body>
+</html>

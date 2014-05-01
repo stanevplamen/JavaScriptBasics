@@ -1,0 +1,25 @@
+﻿body {
+    background-color: #e6dbdb;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:symbol, 'Standard Symbols L';
+}
+
+body div {
+    border: 3px solid #7d6e6e;
+    margin: 3px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+label {
+    color: blue;
+}
+
+.answer {
+    border: 1px solid black;
+}
+
+input {
+    margin: 2px;
+}

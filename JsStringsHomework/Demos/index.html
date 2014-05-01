@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>General document</title>
+    <script src="scripts/jquery-1.7.1.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/sprintf-0.7-beta1.js"></script>
+    <script src="scripts/StringBuilder.js"></script>
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+     <h1>Strings Processing</h1>
+    <div>
+        <label>1. Write a JavaScript function reverses string and returns it.</label><br />
+        <input id="txtIsRev" type="text" value="sample" /> 
+        <input id="btnIsRev" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsRev"></span>
+    </div>
+     <div>
+        <label> 2. Write a JavaScript function to check if in a given expression the brackets are put correctly.</label><br />
+        <input id="txtIsSign" type="text" value="((a+b)/5-d)" /> 
+        <input id="btnIsSign" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsSign"></span>
+    </div>
+    <div>
+        <label> 3.Write a JavaScript function that finds how many times a substring is contained in a given text (perform case insensitive search).</label><br />
+        <input id="txtIsCou1" type="text" value="in" /> <br />
+        <textarea id="txtIsCou" >We are living in an yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.</textarea><br />
+        <input id="btnIsCou" type="submit" value="submit" /> 
+        <label>Result: </label>
+        <span class="answer" id="resIsCou"></span>
+    </div>
+      <div>
+        <label> 4. You are given a text. Write a function that changes the text in all regions.</label><br />
+        <textarea id="txtIsNT" >We are <mixcase>living</mixcase> in a <upcase>yellow submarine</upcase>. We <mixcase>don't</mixcase> have <lowcase>anything</lowcase> else.</textarea><br />
+        <input id="btnIsNT" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsNT"></textarea>
+    </div>
+      <div>
+        <label> 5. Write a function that replaces non breaking white-spaces in a text with (&)nbsp;.</label><br />
+        <textarea id="txtIsRep" >We are living in an yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.</textarea><br />
+        <input id="btnIsRep" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsRep"></textarea>
+    </div>
+     <div>
+        <label> 6. Write a function that extracts the content of a html page given as text. The function should return anything that is in a tag, without the tags.</label><br />
+        <textarea id="txtIsExt" ><html><head><title>Sample site</title></head><body><div>text<div>more text</div>and more...</div>in body</body></html></textarea><br />
+        <input id="btnIsExt" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsExt"></textarea>
+    </div>
+     <div>
+        <label> 7. Write a script that parses an URL address given in the format.</label><br />
+        <input id="txtIsFiv" type="text" value="http://servername.com/username/collectionkey/sectionkey.extension" /> 
+        <input id="btnIsFiv" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <span class="answerSpecial" id="resIsFiv"></span>
+    </div>
+     <div>
+        <label> 8.Write a JavaScript function that replaces in a HTML document given as string all the tags <(a) href="…">…</(a)> with corresponding tags [URL=…]…/URL]. Sample HTML fragment.</label><br />
+        <textarea id="txtIsTag" ><p>Please visit <a href="http://academy.telerik. com">our site</a> to choose a training course. Also visit <a href="www.devbg.org">our forum</a> to discuss the courses.</p></textarea><br />
+        <input id="btnIsTag" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsTag"></textarea>
+    </div>
+       <div>
+        <label> 9.Write a function for extracting all email addresses from given text. All substrings that match the format <identifier>@<host>…<domain> should be recognized as emails. Return the emails as array of strings.</label><br />
+        <textarea id="txtIsEma" >Please contact us by phone (+359 222 222 222) or by email at example@abv.bg or at baj.ivan@yahoo.co.uk. This is not email: test@test. This also: @telerik.com. Neither this: a@a.b.</textarea><br />
+        <input id="btnIsEma" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsEma"></textarea>
+    </div>
+       <div>
+        <label> 10.Write a program that extracts from a given text all palindromes, e.g. "ABBA", "lamal", "exe".</label><br />
+        <textarea id="txtIsPal" >abba, exe, some words which are not palindromes, lamal.</textarea><br />
+        <input id="btnIsPal" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsPal"></textarea>
+    </div>
+       <div>
+        <label> 11.Write a function that formats a string using placeholders:.</label><br />
+        <textarea id="txtIsSF" >Hello! My name is {0}... {1} knows, David, Ivan</textarea><br />
+        <input id="btnIsSF" type="submit" value="submit" /> 
+        <label>Result: </label> <br />
+        <textarea class="answer" id="resIsSF"></textarea>
+    </div>
+    <div>
+        <label> 12.Write a function that creates a HTML UL using a template for every HTML LI. The source of the list should an array of elements. Replace all placeholders marked with –{…}–   with the value of the corresponding property of the object.</label><br />
+        <input id="btnIsSFA" type="submit" value="generate list" />
+        <label>Result: </label> <br />
+        <ul id="resultlist"></ul>
+        <input id="btnIsSFB" type="submit" value="replace props" />
+        <ul id="finallist"></ul>
+    </div>
+
+</body>
+</html>
