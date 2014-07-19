@@ -142,7 +142,8 @@
         var mostCommonLastName = _.max(_.groupBy(students, "lastName"), function (students) {
             return students.length;
         });
-        console.log(mostCommonLastName[0].sname + ": " + mostCommonLastName.length + " times");
+        console.log(mostCommonLastName[0].sname + ": " + mostCommonLastName.length + "  times");
+	
     }
 
 })();
