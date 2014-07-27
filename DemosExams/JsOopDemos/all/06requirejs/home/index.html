@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Combo Box</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="./js/libs/require.js" data-main="js/app-config"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/x-handlebars-template" id="animal-template">
+        <div class="animal-item" id="animal-item-{{id}}">
+            <strong class="animal-name">{{animal}}</strong><p class="animal-age">Age: {{age}}</p>
+            <img src="{{image}}" width="120" />
+        </div>
+    </script>
+</body>
+</html>

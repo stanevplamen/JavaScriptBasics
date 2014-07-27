@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Drawing shapes</title>
+    <script src="./js/CanvasShape.js"></script>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script>
+        var canvas = new CanvasShape('#wrapper', {
+            stroke: 'red',
+            width: 860,
+            line: 5
+        });
+
+        canvas.drawLine(100, 100, 200, 100);
+        canvas.drawCircle(300, 100, 50);
+        canvas.drawRect(400, 50, 100, 100);
+    </script>
+</body>
+</html>

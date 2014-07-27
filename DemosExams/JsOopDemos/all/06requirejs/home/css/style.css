@@ -1,0 +1,13 @@
+﻿body, * {
+    margin: 0;
+    padding: 0;
+}
+
+div.animal-item {
+    max-width: 120px;
+    max-width: 200px;
+}
+
+    div.animal-item :hover {
+        cursor: pointer;
+    }
