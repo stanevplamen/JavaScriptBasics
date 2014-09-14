@@ -1,0 +1,13 @@
+﻿Js objects
+http://www.phpied.com/3-ways-to-define-a-javascript-class/
+http://stackoverflow.com/questions/387707/whats-the-best-way-to-define-a-class-in-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+http://bjorn.tipling.com/advanced-objects-in-javascript
+require js ta exam and demos
+
+Js objects inheritance
+http://stackoverflow.com/questions/5027045/what-is-inheritance-in-javascript
+http://stackoverflow.com/questions/1586915/performing-inheritance-in-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain
+http://javascript.crockford.com/inheritance.html
+ta demos - inheritance
